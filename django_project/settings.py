@@ -169,5 +169,8 @@ SPECTACULAR_SETTINGS = {
 }
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-
 SITE_ID = 1
+
+# Static files are not saved in the repo to minimize its size.
+# This setting is set so static files are collected on deployment.
+DISABLE_COLLECTSTATIC = 0
