@@ -149,7 +149,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8000",
 ]
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://polls-api-production.up.railway.app",
+    "http://localhost:3000",
+]
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
